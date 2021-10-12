@@ -40,11 +40,26 @@ total_cost = sum(costs)
 # {:.2f} formats it so the result is rounded to 2 decimal places
 print("{:.2f}".format(total_cost))
 
-# ex 5
+# exercise
 
-in range(1, 6).
-
-new_list = [ expression for item in list if conditional ]
+# new_list = [ expression for item in list if conditional ]
 
 new_list = [ i**2 for i in range(1, 6) if i % 2 == 0 ]
 print(new_list)
+
+# exercise
+
+fruits = [
+    {'name': 'apple', 'colour': 'red', 'price': 0.12},
+    {'name': 'banana', 'colour': 'yellow', 'price': 0.2},
+    {'name': 'pear', 'colour': 'green', 'price': 0.19},
+]
+
+for i in fruits:
+    print(i['name'])
+    print(i['colour'])
+    print(i['price'])
+
+for i in fruits:
+# make sure to put i for the index in the format method
+    print("{}, {}, {}".format(i['name'], i['colour'], i['price']))
