@@ -35,5 +35,22 @@ for i in costs:
 # Write a list comprehension expression to build a new list that calculates the square for the number\
 # that are divisible by 2 in range(1, 6). Your sample output should be [4, 16]
 
+# * performs multiplication
 list_comp = [i*i for i in range(1,6) if i % 2 == 0]
+# or like this, ** to do to the power of something so 2**3 = 8
+list_comp_2 = [i**2 for i in range(1,6) if i % 2 == 0]
 print(list_comp)
+print(list_comp_2)
+
+# EX 5
+fruits = [
+    {'name': 'apple', 'colour': 'red', 'price': 0.12},
+    {'name': 'banana', 'colour': 'yellow', 'price': 0.2},
+    {'name': 'pear', 'colour': 'green', 'price': 0.19},
+]
+for i in fruits:
+# use i to refer back to the dictionary (each iterable represents an individual dictionary)
+# it is not a nested dictionary hence dont put the [] consecutively after one another\
+# separate the key-value pairs by a comma as this is not a nested dictionary
+    print(i['name'], i['colour'], i['price'])
+
